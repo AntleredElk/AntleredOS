@@ -7,4 +7,4 @@
 
 #endif //ASSIGNMENT1_INTERPRETER_H
 
-void interpreter(char *command, char **arguments);
+void interpreter(char *command, int nbrOfArguments, char **arguments);

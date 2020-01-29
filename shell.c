@@ -28,6 +28,7 @@ void parse() {
     fgets(input ,100 ,stdin);
 
     for(int positionInString = 0; positionInString <strlen(input); positionInString++){
+
         if(input[positionInString] == ' '){
             nbrOfArguments++;
         }
@@ -55,7 +56,7 @@ void parse() {
 //    for (index = 0; index < nbrOfArguments; index++){
 //        printf("%s\n", arguments[index]);
 //    }
-    interpreter(command, arguments);
+    interpreter(command, nbrOfArguments, arguments);
 
     free(arguments);
     free(*arguments);

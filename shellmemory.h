@@ -6,3 +6,6 @@
 #define ASSIGNMENT1_SHELLMEMORY_H
 
 #endif //ASSIGNMENT1_SHELLMEMORY_H
+
+void store(char* argument1, char* argument2);
+void retrieve(char* argument1);
