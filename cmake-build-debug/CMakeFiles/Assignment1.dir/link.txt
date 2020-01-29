@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Assignment1.dir/shell.c.o CMakeFiles/Assignment1.dir/interpreter.c.o CMakeFiles/Assignment1.dir/shellmemory.c.o  -o Assignment1 
