@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/antler/CLionProjects/Assignment1/interpreter.h
-
-/home/antler/CLionProjects/Assignment1/shell.c
+/home/antler/CLionProjects/Assignment1/interpreter.c
+string.h
+-
 stdio.h
 -
 stdlib.h
 -
-string.h
--
-interpreter.h
-/home/antler/CLionProjects/Assignment1/interpreter.h
 

@@ -55,6 +55,7 @@ void parse() {
 //    for (index = 0; index < nbrOfArguments; index++){
 //        printf("%s\n", arguments[index]);
 //    }
+    interpreter(command, arguments);
 
     free(arguments);
     free(*arguments);
