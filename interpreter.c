@@ -12,8 +12,8 @@ void interpreter(char *command, int nbrOfArguments, char **arguments){
     if(strncmp(command,"help", strlen("help")) == 0){ // Note that fgets will store a newline character or enter in the array. strncmp compares the first n bytes
         printf("help %15s Displays all the commands\n", " ");
         printf("quit %15s Exits / terminates the shell with “Bye!”\n", " ");
-        printf("set %16s Assigns a value to shell memory\n", " ");
-        printf("print %14s Displays the STRING assigned to VAR\n", " ");
+        printf("set VAR STRING %5s Assigns a value to shell memory\n", " ");
+        printf("print VAR %10s Displays the STRING assigned to VAR\n", " ");
         printf("run %16s Executes the file SCRIPT.TXT\n", " ");
     }
     else if(strncmp(command,"quit", strlen("quit"))  == 0 ){
@@ -32,7 +32,7 @@ void interpreter(char *command, int nbrOfArguments, char **arguments){
     }
     else if(strncmp(command,"print", strlen("print"))  == 0 ){
 
-        if(nbrOfArguments > 2 || nbrOfArguments < 1){
+        if(nbrOfArguments > 2 || nbrOfArguments < 2){
             printf("Invalid number of arguments\n");
         }
         else{
@@ -40,6 +40,26 @@ void interpreter(char *command, int nbrOfArguments, char **arguments){
         }
     }
     else if(strncmp(command,"run", strlen("run"))  == 0 ){
-        //TODO
+
+        if(nbrOfArguments > 2 || nbrOfArguments < 2){
+            printf("Invalid number of arguments\n");
+        }
+        else{
+            //Buffer to get rid of newline
+            char *fileName;
+            strcpy(fileName, arguments[1]);
+            fileName[strlen(fileName)-1] = '\0';
+
+            FILE *file = fopen(fileName, "r");
+
+            if(file == NULL){
+                printf("%s could not be found\n", fileName);
+            }
+
+            //TODO what happens if it exists?
+        }
+    }
+    else{
+        printf("Unknown command\n");
     }
 }

@@ -25,11 +25,24 @@ void store( char* argument1, char* argument2){
 };
 
 void retrieve(char* argument1){
-    int checkIndex = 0;
+    int checkIndex = 99;
+    int match = 0;
 
-    //Compares the first n bytes to exclude the \n
-    while(strncmp(array[checkIndex].var,argument1, strlen(array[checkIndex].var))!=0){
-      checkIndex++;
+    // Works down the array to determine which variable was last updated, and to use that.
+    //If variable is not declared then say so
+    for(int index = 0; index < 100; index++){
+        if(strncmp(array[checkIndex].var,argument1, strlen(array[checkIndex].var))==0
+        && strlen(array[checkIndex].var) > 0){
+            match = 1;
+            printf("%s", array[checkIndex].value);
+            break;
+        }
+        else {
+            match = 0;
+            checkIndex--;
+        }
     }
-    printf("%s", array[checkIndex].value);
+    if(match == 0) printf("Variable does not exist\n");
+
+    //TODO implement error for if not found
 }
