@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "shellmemory.h"
+#include "shell.h"
 
 void interpreter(char *command, int nbrOfArguments, char **arguments){
 
@@ -50,13 +51,19 @@ void interpreter(char *command, int nbrOfArguments, char **arguments){
             strcpy(fileName, arguments[1]);
             fileName[strlen(fileName)-1] = '\0';
 
+            char line[1000];
+
             FILE *file = fopen(fileName, "r");
 
             if(file == NULL){
                 printf("%s could not be found\n", fileName);
             }
-
-            //TODO what happens if it exists?
+            else {
+                while (EOF != fscanf(file, "%1000[^\n]\n", line)) {
+                    parseArgument(line);
+                }
+                fclose(file);
+            }
         }
     }
     else{

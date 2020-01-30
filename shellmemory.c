@@ -43,6 +43,4 @@ void retrieve(char* argument1){
         }
     }
     if(match == 0) printf("Variable does not exist\n");
-
-    //TODO implement error for if not found
 }

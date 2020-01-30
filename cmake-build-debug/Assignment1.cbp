@@ -87,6 +87,9 @@
 		<Unit filename="/home/antler/CLionProjects/Assignment1/shell.c">
 			<Option target="Assignment1"/>
 		</Unit>
+		<Unit filename="/home/antler/CLionProjects/Assignment1/shell.h">
+			<Option target="Assignment1"/>
+		</Unit>
 		<Unit filename="/home/antler/CLionProjects/Assignment1/shellmemory.c">
 			<Option target="Assignment1"/>
 		</Unit>

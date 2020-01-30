@@ -3,4 +3,4 @@ project(Assignment1 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Assignment1 shell.c interpreter.c shellmemory.c interpreter.h shellmemory.h)
+add_executable(Assignment1 shell.c interpreter.c shellmemory.c interpreter.h shellmemory.h shell.h)
