@@ -59,8 +59,9 @@ void interpreter(char *command, int nbrOfArguments, char **arguments){
                 printf("%s could not be found\n", fileName);
             }
             else {
-                while (EOF != fscanf(file, "%1000[^\n]\n", line)) {
-                    parseArgument(line);
+                while (EOF != fscanf(file, "%1024[^\n]\n", line)) {
+                    parseArgument(strcat(line,"\n"));
+                    //printf("%s", line);
                 }
                 fclose(file);
             }

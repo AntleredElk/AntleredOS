@@ -15,6 +15,22 @@ stdlib.h
 -
 shellmemory.h
 /home/antler/CLionProjects/Assignment1/shellmemory.h
+shell.h
+/home/antler/CLionProjects/Assignment1/shell.h
+
+/home/antler/CLionProjects/Assignment1/interpreter.h
+
+/home/antler/CLionProjects/Assignment1/shell.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+interpreter.h
+/home/antler/CLionProjects/Assignment1/interpreter.h
+
+/home/antler/CLionProjects/Assignment1/shell.h
 
 /home/antler/CLionProjects/Assignment1/shellmemory.h
 

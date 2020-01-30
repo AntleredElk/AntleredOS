@@ -9,5 +9,6 @@ print x
 print y
 print z
 print bobbie
-run testfile.txt
+run
+run thisCannotBeFound
 quit

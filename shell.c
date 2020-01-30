@@ -8,7 +8,7 @@ void parseArgument();
 
 int main() {
 
-    printf("Welcome to the Antlered shell!\n");
+    printf("Welcome to the Edward LK shell!\n");
     printf("Version 1.0 Created January 2020\n");
 
     do{
@@ -55,7 +55,7 @@ void parse() {
 
 //    Test to see if correct arguments are isolated
 //    for (index = 0; index < nbrOfArguments; index++){
-//        printf("%s\n", arguments[index]);
+//        printf(":arguments[%d]: %s:\n", index , arguments[index]);
 //    }
     interpreter(command, nbrOfArguments, arguments);
 
@@ -99,7 +99,7 @@ void parseArgument(char *argument) {
 
 //    Test to see if correct arguments are isolated
 //    for (index = 0; index < nbrOfArguments; index++){
-//        printf("%s\n", arguments[index]);
+//        printf(":arguments[%d]: %s:\n", index , arguments[index]);
 //    }
     interpreter(command, nbrOfArguments, arguments);
 
