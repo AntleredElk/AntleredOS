@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Assignment_2.dir/interpreter.c.o CMakeFiles/Assignment_2.dir/shell.c.o CMakeFiles/Assignment_2.dir/shellmemory.c.o CMakeFiles/Assignment_2.dir/kernel.c.o CMakeFiles/Assignment_2.dir/cpu.c.o CMakeFiles/Assignment_2.dir/pcb.c.o CMakeFiles/Assignment_2.dir/ram.c.o  -o Assignment_2 
