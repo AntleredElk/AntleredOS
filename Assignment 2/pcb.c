@@ -45,13 +45,28 @@ PCB* addToReady(PCB* head, int start, int end){
     return head;
 }
 
-PCB* removeFromReady(PCB* head){
+void removeFromReady(){
     if(head == NULL) {
-        return NULL;
+        //return NULL;
     }
     PCB *front = head;
     head = head->next;
     front->next = NULL;
+
+    if(front == head) {
+        head = NULL;
+    }
+    free(front);
+    //return head;
+}
+
+PCB* readFromReady(PCB* head){
+    if(head == NULL) {
+        return NULL;
+    }
+    PCB *front = head;
+    //head = head->next;
+    //front->next = NULL;
 
     if(front == head) {
         head = NULL;

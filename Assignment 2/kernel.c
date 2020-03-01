@@ -26,18 +26,27 @@ void myinit(const char* path){
 
 void scheduler(){
     core = malloc(sizeof(CPU));
+    int running = 1;
 
-    while(1) {
-        PCB *removedPCB = removeFromReady(head);
+    while(running) {
+        PCB *removedPCB = readFromReady(head);
         core->IP = removedPCB->pCounter;
         core->quanta = 2;
         runCore(core->quanta);
-        if (!(core->IP > removedPCB->endAdd)) {
+        if (core->IP <= removedPCB->endAdd) {
+            removeFromReady();
             head = addToReady(head, core->IP, removedPCB->endAdd);
-        } else {
-            for (int cell = removedPCB->startAdd; cell <= removedPCB->endAdd; cell++) {
+        }
+        else if (core->IP > removedPCB->endAdd) {
+            for (int cell = removedPCB->endAdd-removedPCB->pCounter; cell <= removedPCB->endAdd; cell++) {
                 ram[cell] = NULL;
             }
+        }
+        for(int cell = 0; cell<= SIZE_OF_RAM; cell++){
+            if (ram[cell] != NULL){
+                break;
+            }
+            running = 0;
         }
     }
 }

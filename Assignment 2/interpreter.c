@@ -161,8 +161,7 @@ int exec(const char *path_1, const char *path_2, const char *path_3){
                 myinit(path_1);
                 myinit(path_2);
                 myinit(path_3);
-                //TEST
-                print_list(head);
+                scheduler();
             }
         }
     }
@@ -180,8 +179,8 @@ int exec(const char *path_1, const char *path_2, const char *path_3){
             else {
                 myinit(path_1);
                 myinit(path_2);
-                //TEST
-                print_list(head);
+                //print_list(head);
+                scheduler();
             }
 
         }
@@ -212,8 +211,8 @@ int print(const char *key)
     const char *value = shell_memory_get(key);
     if (value == NULL)
     {
-        printf("print: Undefiend value.\n");
-        return 1;
+        printf("print: Undefined value.\n");
+        return 0;
     }
     printf("%s\n", value);
     return 0;
@@ -246,7 +245,7 @@ int interpret(char *raw_input)
             free(tokens);
             return 1;
         }
-        free(raw_input);
+        //free(raw_input);
         free(tokens);
         return quit();
     };
@@ -257,7 +256,7 @@ int interpret(char *raw_input)
         {
             printf("set: Malformed command\n");
             free(tokens);
-            return 1;
+            return 0;
         }
         int status = set(tokens[1], tokens[2]);
         free(tokens);

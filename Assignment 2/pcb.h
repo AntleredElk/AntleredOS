@@ -13,5 +13,6 @@ extern PCB* head;
 
 PCB* makePCB(int start, int end, PCB* next);
 PCB* addToReady(PCB* head, int start, int end);
-PCB* removeFromReady(PCB* head);
+void removeFromReady();
+PCB* readFromReady(PCB* head);
 void print_list(PCB* head);
