@@ -89,6 +89,9 @@
 		<Unit filename="/home/antler/CLionProjects/Assignment/Assignment 2/cpu.c">
 			<Option target="Assignment_2"/>
 		</Unit>
+		<Unit filename="/home/antler/CLionProjects/Assignment/Assignment 2/cpu.h">
+			<Option target="Assignment_2"/>
+		</Unit>
 		<Unit filename="/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.c">
 			<Option target="Assignment_2"/>
 		</Unit>
@@ -96,6 +99,9 @@
 			<Option target="Assignment_2"/>
 		</Unit>
 		<Unit filename="/home/antler/CLionProjects/Assignment/Assignment 2/kernel.c">
+			<Option target="Assignment_2"/>
+		</Unit>
+		<Unit filename="/home/antler/CLionProjects/Assignment/Assignment 2/kernel.h">
 			<Option target="Assignment_2"/>
 		</Unit>
 		<Unit filename="/home/antler/CLionProjects/Assignment/Assignment 2/pcb.c">

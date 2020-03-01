@@ -13,47 +13,51 @@ typedef struct{
     struct PCB* next;
 }PCB;
 
-PCB* create(int start, int end, PCB* next){
+PCB* head;
+
+PCB* makePCB(int start, int end, PCB* next){
     PCB* new_pcb = (PCB*)malloc(sizeof(PCB));
     if(new_pcb == NULL){
         printf("Error");
         return 1;
     }
     new_pcb ->startAdd = start;
+    new_pcb ->pCounter = start;
     new_pcb ->endAdd = end;
     new_pcb ->next = next;
     return new_pcb;
 }
 
-PCB* push(PCB* head, int start, int end){
+PCB* addToReady(PCB* head, int start, int end){
     if(head == NULL){
         head = (PCB*)malloc(sizeof(PCB));
-        head = create(start, end, NULL);
+        head = makePCB(start, end, NULL);
     }
     else {
         PCB *cursor = head;
         while (cursor->next != NULL) {
             cursor = cursor->next;
         }
-        PCB *new_pcb = create(start, end, NULL);
+        PCB *new_pcb = makePCB(start, end, NULL);
         cursor->next = new_pcb;
     }
 
     return head;
 }
 
-PCB* pop(PCB* head){
+PCB* removeFromReady(PCB* head){
     if(head == NULL) {
         return NULL;
     }
     PCB *front = head;
     head = head->next;
     front->next = NULL;
+
     if(front == head) {
         head = NULL;
     }
-    free(front);
-    return head;
+    //free(front);
+    return front;
 }
 
 void print_list(PCB* head){

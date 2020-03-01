@@ -11,4 +11,4 @@ add_executable(Assignment_2
         shell.c
         shellmemory.c
         shellmemory.h
-        testfile.txt kernel.c cpu.c pcb.c ram.c shell.h ram.h pcb.h)
+        testfile.txt kernel.c cpu.c pcb.c ram.c shell.h ram.h pcb.h kernel.h cpu.h)

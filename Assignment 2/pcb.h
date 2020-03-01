@@ -11,7 +11,7 @@ typedef struct{
 
 extern PCB* head;
 
-PCB* create(int start, int end, PCB* next);
-PCB* push(PCB* head, int start, int end);
-PCB* pop(PCB* head);
+PCB* makePCB(int start, int end, PCB* next);
+PCB* addToReady(PCB* head, int start, int end);
+PCB* removeFromReady(PCB* head);
 void print_list(PCB* head);

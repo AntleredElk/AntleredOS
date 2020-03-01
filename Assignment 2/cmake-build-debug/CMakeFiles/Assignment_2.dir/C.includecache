@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.c
-interpreter.h
-/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.h
-shellmemory.h
-/home/antler/CLionProjects/Assignment/Assignment 2/shellmemory.h
-ram.h
-/home/antler/CLionProjects/Assignment/Assignment 2/ram.h
-pcb.h
-/home/antler/CLionProjects/Assignment/Assignment 2/pcb.h
-stdlib.h
--
-stdint.h
--
-string.h
--
-stdio.h
--
-
-/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.h
-
 /home/antler/CLionProjects/Assignment/Assignment 2/pcb.c
 stddef.h
 -
@@ -33,10 +13,4 @@ stdlib.h
 -
 stdio.h
 -
-
-/home/antler/CLionProjects/Assignment/Assignment 2/pcb.h
-
-/home/antler/CLionProjects/Assignment/Assignment 2/ram.h
-
-/home/antler/CLionProjects/Assignment/Assignment 2/shellmemory.h
 

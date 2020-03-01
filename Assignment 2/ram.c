@@ -13,22 +13,15 @@ char *ram[SIZE_OF_RAM]; //array of strings;
 // Start and End flag for a script or program
 int start, end, flag;
 
-int addToRAM(const char *path){
+void addToRAM(const char *path){
     FILE *file = fopen(path, "r");
     char line[MAX_LENGTH];
-
-
-
-    if(file == NULL){
-        printf("file not found\n");
-        return 1;
-    }
 
     for(int cell=0; cell< SIZE_OF_RAM; cell++) {
         if (ram[cell] == NULL) {
             fgets(line, MAX_LENGTH, file);
-            ram[cell] = line;
-
+            ram[cell] = malloc(sizeof(char*));
+            strcpy(ram[cell],line);
             if (flag == 0) {
                 start = cell;
             }
@@ -48,11 +41,9 @@ int addToRAM(const char *path){
 
     if(end-start > 33){
         printf("error");
-        return 1;
     }
     else {
         flag = 0;
-        return 0;
 //           for (int cell = start; cell <= end; cell++) {
 //               ram[cell] = NULL;
 //               }

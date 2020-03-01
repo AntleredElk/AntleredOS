@@ -2,6 +2,7 @@
 #include "shellmemory.h"
 #include "ram.h"
 #include "pcb.h"
+#include "kernel.h"
 
 #include <stdlib.h>
 #include <stdint.h>
@@ -136,8 +137,6 @@ int run(const char *path)
 
 int exec(const char *path_1, const char *path_2, const char *path_3){
 
-    PCB *head, *tail;
-
     if(path_2 == NULL) path_3 = NULL;
 
     if(path_3 != NULL){
@@ -154,14 +153,17 @@ int exec(const char *path_1, const char *path_2, const char *path_3){
             return 1;
         }
         else{
-            addToRAM(path_1);
-            head = push(head, start, end);
-            addToRAM(path_2);
-            push(head, start, end);
-            addToRAM(path_3);
-            push(head, start, end);
-            //TEST
-            print_list(head);
+            if(fopen(path_1, "r") == NULL || fopen(path_2, "r") == NULL || fopen(path_3, "r") == NULL){
+                printf("file not found\n");
+                return 1;
+            }
+            else {
+                myinit(path_1);
+                myinit(path_2);
+                myinit(path_3);
+                //TEST
+                print_list(head);
+            }
         }
     }
 
@@ -171,25 +173,30 @@ int exec(const char *path_1, const char *path_2, const char *path_3){
             return 1;
         }
         else{
-            //TODO
-            addToRAM(path_1);
-            head = push(head, start, end);
-            addToRAM(path_2);
-            push(head, start, end);
-            //TEST
-           //EXECUTE commands
-           //reset ram, and remove from queue
+            if(fopen(path_1, "r") == NULL || fopen(path_2, "r") == NULL){
+                printf("file not found\n");
+                return 1;
+            }
+            else {
+                myinit(path_1);
+                myinit(path_2);
+                //TEST
+                print_list(head);
+            }
 
         }
     }
     else{
-        addToRAM(path_1);
-        //TODO deal with case if path_1 is null or DNE
-        head=push(head, start, end);
-        //TEST
-        print_list(head);
-        return 0;
+        if(fopen(path_1, "r") == NULL){
+            printf("file not found\n");
+            return 1;
+        }
+        else {
+            myinit(path_1);
+            scheduler();
+        }
     }
+    return 0;
 }
 
 int set(const char *key, const char *value)
