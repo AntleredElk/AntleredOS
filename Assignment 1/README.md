@@ -1,4 +1,4 @@
-# ECSE-427
+# AntleredOS
 
 AntleredOS is a study of the inner workings of Operating Systems, in which a rudimentary operating system is built in C.
 
