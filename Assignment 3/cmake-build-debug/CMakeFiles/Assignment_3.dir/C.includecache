@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/antler/CLionProjects/Assignment/Assignment 3/cpu.h
+
+/home/antler/CLionProjects/Assignment/Assignment 3/interpreter.h
+
+/home/antler/CLionProjects/Assignment/Assignment 3/kernel.c
+shell.h
+/home/antler/CLionProjects/Assignment/Assignment 3/shell.h
+pcb.h
+/home/antler/CLionProjects/Assignment/Assignment 3/pcb.h
+ram.h
+/home/antler/CLionProjects/Assignment/Assignment 3/ram.h
+cpu.h
+/home/antler/CLionProjects/Assignment/Assignment 3/cpu.h
+interpreter.h
+/home/antler/CLionProjects/Assignment/Assignment 3/interpreter.h
+stddef.h
+-
+string.h
+-
+stdlib.h
+-
+
+/home/antler/CLionProjects/Assignment/Assignment 3/pcb.h
+
+/home/antler/CLionProjects/Assignment/Assignment 3/ram.h
+
+/home/antler/CLionProjects/Assignment/Assignment 3/shell.h
+
