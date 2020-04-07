@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/103/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/107/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/107/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,61 +57,9 @@ include CMakeFiles/Assignment_2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Assignment_2.dir/flags.make
 
-CMakeFiles/Assignment_2.dir/interpreter.c.o: CMakeFiles/Assignment_2.dir/flags.make
-CMakeFiles/Assignment_2.dir/interpreter.c.o: ../interpreter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Assignment_2.dir/interpreter.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/interpreter.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.c"
-
-CMakeFiles/Assignment_2.dir/interpreter.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_2.dir/interpreter.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.c" > CMakeFiles/Assignment_2.dir/interpreter.c.i
-
-CMakeFiles/Assignment_2.dir/interpreter.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/interpreter.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.c" -o CMakeFiles/Assignment_2.dir/interpreter.c.s
-
-CMakeFiles/Assignment_2.dir/shell.c.o: CMakeFiles/Assignment_2.dir/flags.make
-CMakeFiles/Assignment_2.dir/shell.c.o: ../shell.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Assignment_2.dir/shell.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/shell.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/shell.c"
-
-CMakeFiles/Assignment_2.dir/shell.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_2.dir/shell.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/antler/CLionProjects/Assignment/Assignment 2/shell.c" > CMakeFiles/Assignment_2.dir/shell.c.i
-
-CMakeFiles/Assignment_2.dir/shell.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/shell.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/shell.c" -o CMakeFiles/Assignment_2.dir/shell.c.s
-
-CMakeFiles/Assignment_2.dir/shellmemory.c.o: CMakeFiles/Assignment_2.dir/flags.make
-CMakeFiles/Assignment_2.dir/shellmemory.c.o: ../shellmemory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Assignment_2.dir/shellmemory.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/shellmemory.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/shellmemory.c"
-
-CMakeFiles/Assignment_2.dir/shellmemory.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_2.dir/shellmemory.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/antler/CLionProjects/Assignment/Assignment 2/shellmemory.c" > CMakeFiles/Assignment_2.dir/shellmemory.c.i
-
-CMakeFiles/Assignment_2.dir/shellmemory.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/shellmemory.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/shellmemory.c" -o CMakeFiles/Assignment_2.dir/shellmemory.c.s
-
-CMakeFiles/Assignment_2.dir/kernel.c.o: CMakeFiles/Assignment_2.dir/flags.make
-CMakeFiles/Assignment_2.dir/kernel.c.o: ../kernel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Assignment_2.dir/kernel.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/kernel.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/kernel.c"
-
-CMakeFiles/Assignment_2.dir/kernel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_2.dir/kernel.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/antler/CLionProjects/Assignment/Assignment 2/kernel.c" > CMakeFiles/Assignment_2.dir/kernel.c.i
-
-CMakeFiles/Assignment_2.dir/kernel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/kernel.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/kernel.c" -o CMakeFiles/Assignment_2.dir/kernel.c.s
-
 CMakeFiles/Assignment_2.dir/cpu.c.o: CMakeFiles/Assignment_2.dir/flags.make
 CMakeFiles/Assignment_2.dir/cpu.c.o: ../cpu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Assignment_2.dir/cpu.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Assignment_2.dir/cpu.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/cpu.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/cpu.c"
 
 CMakeFiles/Assignment_2.dir/cpu.c.i: cmake_force
@@ -122,9 +70,35 @@ CMakeFiles/Assignment_2.dir/cpu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/cpu.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/cpu.c" -o CMakeFiles/Assignment_2.dir/cpu.c.s
 
+CMakeFiles/Assignment_2.dir/interpreter.c.o: CMakeFiles/Assignment_2.dir/flags.make
+CMakeFiles/Assignment_2.dir/interpreter.c.o: ../interpreter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Assignment_2.dir/interpreter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/interpreter.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.c"
+
+CMakeFiles/Assignment_2.dir/interpreter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_2.dir/interpreter.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.c" > CMakeFiles/Assignment_2.dir/interpreter.c.i
+
+CMakeFiles/Assignment_2.dir/interpreter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/interpreter.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/interpreter.c" -o CMakeFiles/Assignment_2.dir/interpreter.c.s
+
+CMakeFiles/Assignment_2.dir/kernel.c.o: CMakeFiles/Assignment_2.dir/flags.make
+CMakeFiles/Assignment_2.dir/kernel.c.o: ../kernel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Assignment_2.dir/kernel.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/kernel.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/kernel.c"
+
+CMakeFiles/Assignment_2.dir/kernel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_2.dir/kernel.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/antler/CLionProjects/Assignment/Assignment 2/kernel.c" > CMakeFiles/Assignment_2.dir/kernel.c.i
+
+CMakeFiles/Assignment_2.dir/kernel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/kernel.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/kernel.c" -o CMakeFiles/Assignment_2.dir/kernel.c.s
+
 CMakeFiles/Assignment_2.dir/pcb.c.o: CMakeFiles/Assignment_2.dir/flags.make
 CMakeFiles/Assignment_2.dir/pcb.c.o: ../pcb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Assignment_2.dir/pcb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Assignment_2.dir/pcb.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/pcb.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/pcb.c"
 
 CMakeFiles/Assignment_2.dir/pcb.c.i: cmake_force
@@ -137,7 +111,7 @@ CMakeFiles/Assignment_2.dir/pcb.c.s: cmake_force
 
 CMakeFiles/Assignment_2.dir/ram.c.o: CMakeFiles/Assignment_2.dir/flags.make
 CMakeFiles/Assignment_2.dir/ram.c.o: ../ram.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Assignment_2.dir/ram.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Assignment_2.dir/ram.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/ram.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/ram.c"
 
 CMakeFiles/Assignment_2.dir/ram.c.i: cmake_force
@@ -148,26 +122,52 @@ CMakeFiles/Assignment_2.dir/ram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/ram.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/ram.c" -o CMakeFiles/Assignment_2.dir/ram.c.s
 
+CMakeFiles/Assignment_2.dir/shell.c.o: CMakeFiles/Assignment_2.dir/flags.make
+CMakeFiles/Assignment_2.dir/shell.c.o: ../shell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Assignment_2.dir/shell.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/shell.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/shell.c"
+
+CMakeFiles/Assignment_2.dir/shell.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_2.dir/shell.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/antler/CLionProjects/Assignment/Assignment 2/shell.c" > CMakeFiles/Assignment_2.dir/shell.c.i
+
+CMakeFiles/Assignment_2.dir/shell.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/shell.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/shell.c" -o CMakeFiles/Assignment_2.dir/shell.c.s
+
+CMakeFiles/Assignment_2.dir/shellmemory.c.o: CMakeFiles/Assignment_2.dir/flags.make
+CMakeFiles/Assignment_2.dir/shellmemory.c.o: ../shellmemory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Assignment_2.dir/shellmemory.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_2.dir/shellmemory.c.o   -c "/home/antler/CLionProjects/Assignment/Assignment 2/shellmemory.c"
+
+CMakeFiles/Assignment_2.dir/shellmemory.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_2.dir/shellmemory.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/antler/CLionProjects/Assignment/Assignment 2/shellmemory.c" > CMakeFiles/Assignment_2.dir/shellmemory.c.i
+
+CMakeFiles/Assignment_2.dir/shellmemory.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_2.dir/shellmemory.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/antler/CLionProjects/Assignment/Assignment 2/shellmemory.c" -o CMakeFiles/Assignment_2.dir/shellmemory.c.s
+
 # Object files for target Assignment_2
 Assignment_2_OBJECTS = \
-"CMakeFiles/Assignment_2.dir/interpreter.c.o" \
-"CMakeFiles/Assignment_2.dir/shell.c.o" \
-"CMakeFiles/Assignment_2.dir/shellmemory.c.o" \
-"CMakeFiles/Assignment_2.dir/kernel.c.o" \
 "CMakeFiles/Assignment_2.dir/cpu.c.o" \
+"CMakeFiles/Assignment_2.dir/interpreter.c.o" \
+"CMakeFiles/Assignment_2.dir/kernel.c.o" \
 "CMakeFiles/Assignment_2.dir/pcb.c.o" \
-"CMakeFiles/Assignment_2.dir/ram.c.o"
+"CMakeFiles/Assignment_2.dir/ram.c.o" \
+"CMakeFiles/Assignment_2.dir/shell.c.o" \
+"CMakeFiles/Assignment_2.dir/shellmemory.c.o"
 
 # External object files for target Assignment_2
 Assignment_2_EXTERNAL_OBJECTS =
 
-Assignment_2: CMakeFiles/Assignment_2.dir/interpreter.c.o
-Assignment_2: CMakeFiles/Assignment_2.dir/shell.c.o
-Assignment_2: CMakeFiles/Assignment_2.dir/shellmemory.c.o
-Assignment_2: CMakeFiles/Assignment_2.dir/kernel.c.o
 Assignment_2: CMakeFiles/Assignment_2.dir/cpu.c.o
+Assignment_2: CMakeFiles/Assignment_2.dir/interpreter.c.o
+Assignment_2: CMakeFiles/Assignment_2.dir/kernel.c.o
 Assignment_2: CMakeFiles/Assignment_2.dir/pcb.c.o
 Assignment_2: CMakeFiles/Assignment_2.dir/ram.c.o
+Assignment_2: CMakeFiles/Assignment_2.dir/shell.c.o
+Assignment_2: CMakeFiles/Assignment_2.dir/shellmemory.c.o
 Assignment_2: CMakeFiles/Assignment_2.dir/build.make
 Assignment_2: CMakeFiles/Assignment_2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/antler/CLionProjects/Assignment/Assignment 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable Assignment_2"

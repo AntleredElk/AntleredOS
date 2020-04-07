@@ -128,9 +128,6 @@
 		<Unit filename="/home/antler/CLionProjects/Assignment/Assignment 2/shellmemory.h">
 			<Option target="Assignment_2"/>
 		</Unit>
-		<Unit filename="/home/antler/CLionProjects/Assignment/Assignment 2/testfile.txt">
-			<Option target="Assignment_2"/>
-		</Unit>
 		<Unit filename="/home/antler/CLionProjects/Assignment/Assignment 2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
