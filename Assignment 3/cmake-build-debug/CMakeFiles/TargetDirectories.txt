@@ -1,3 +1,0 @@
-/home/antler/CLionProjects/Assignment/Assignment 3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/antler/CLionProjects/Assignment/Assignment 3/cmake-build-debug/CMakeFiles/Assignment_3.dir
-/home/antler/CLionProjects/Assignment/Assignment 3/cmake-build-debug/CMakeFiles/edit_cache.dir
