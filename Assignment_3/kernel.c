@@ -9,6 +9,7 @@
 #include <stddef.h>
 #include <string.h>
 #include <stdlib.h>
+#include "memorymanager.h"
 
 void myinit(const char* path);
 void scheduler();
@@ -23,7 +24,8 @@ int main(int argc, const char *argv[]){
 }
 
 void myinit(const char* path){
-    addToRAM(path);
+    FILE *file = fopen(path, "r");
+    launcher(file);
     head = addToReady(head, start, end);
     //scheduler
 

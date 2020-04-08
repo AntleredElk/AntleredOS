@@ -14,10 +14,11 @@ char *ram[SIZE_OF_RAM]; //array of strings;
 // Start and End flag for a script or program
 int start, end, flag;
 
-void addToRAM(const char *path){
-    FILE *file = fopen(path, "r");
+
+void addToRAM(FILE *file){
+    //FILE *file = fopen(path, "r");
     //Added launcher function within exec
-    launcher(file);
+    //launcher(file);
     char line[MAX_LENGTH];
 
     for(int cell=0; cell< SIZE_OF_RAM; cell++) {
@@ -52,4 +53,16 @@ void addToRAM(const char *path){
 //               }
     }
 
+}
+
+int countLine(FILE *file){
+
+    char line[MAX_LENGTH];
+    int count = 0;
+
+    while(fgets(line, MAX_LENGTH, file) != NULL){
+        count++;
+    }
+    rewind(file);   //rewinds fgets iteration process, such that fgets doesn't start from the end
+    return count;
 }
