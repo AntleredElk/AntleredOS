@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #define SIZE_OF_RAM 1000
+#define MAX_LENGTH 100
 
 extern int start;
 extern int end;

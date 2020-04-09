@@ -2,6 +2,3 @@ set z 30
 print z
 set z 45
 print z
-set z 70
-print z
-quit

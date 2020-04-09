@@ -63,6 +63,5 @@ int countLine(FILE *file){
     while(fgets(line, MAX_LENGTH, file) != NULL){
         count++;
     }
-    rewind(file);   //rewinds fgets iteration process, such that fgets doesn't start from the end
     return count;
 }
