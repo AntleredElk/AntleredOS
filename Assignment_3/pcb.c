@@ -14,6 +14,7 @@ typedef struct{
 }PCB;
 
 PCB* head;
+int pageTable[10];
 
 PCB* makePCB(int start, int end, PCB* next){
     PCB* new_pcb = (PCB*)malloc(sizeof(PCB));

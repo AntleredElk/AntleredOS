@@ -11,6 +11,8 @@
 #include <stdlib.h>
 #include "memorymanager.h"
 
+int inExecution;
+
 void myinit(const char* path);
 void scheduler();
 void boot();
@@ -28,7 +30,6 @@ void myinit(const char* path){
     launcher(file);
     head = addToReady(head, start, end);
     //scheduler
-
 }
 
 void boot(){
@@ -57,6 +58,14 @@ void scheduler(){
         PCB *removedPCB = readFromReady(head);
         core->IP = removedPCB->pCounter;
         core->quanta = 2;
+        if(strcmp(ram[core->IP], "\r\n") == 0){
+            for(int cell = 0; cell < SIZE_OF_RAM; cell++) {
+                ram[cell] = NULL;
+            }
+            running = 0;
+            inExecution = 0;
+            break;
+        }
         runCore(core->quanta);
         if (core->IP <= removedPCB->endAdd) {
             removeFromReady();
@@ -69,6 +78,7 @@ void scheduler(){
         }
         for(int cell = 0; cell<= SIZE_OF_RAM; cell++){
             if (ram[cell] != NULL){
+                inExecution = 0;
                 break;
             }
             running = 0;

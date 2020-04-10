@@ -3,3 +3,5 @@
 //
 void myinit(const char* path);
 void scheduler();
+
+extern int inExecution;

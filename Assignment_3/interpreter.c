@@ -159,6 +159,7 @@ int exec(const char *path_1, const char *path_2, const char *path_3){
                 return 1;
             }
             else {
+                inExecution = 1;
                 myinit(path_1);
                 myinit(path_2);
                 myinit(path_3);
@@ -178,6 +179,7 @@ int exec(const char *path_1, const char *path_2, const char *path_3){
                 return 1;
             }
             else {
+                inExecution = 1;
                 myinit(path_1);
                 myinit(path_2);
                 //print_list(head);
@@ -192,6 +194,7 @@ int exec(const char *path_1, const char *path_2, const char *path_3){
             return 1;
         }
         else {
+            //inExecution = 1;
             myinit(path_1);
             scheduler();
         }

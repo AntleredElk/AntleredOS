@@ -20,3 +20,5 @@ add_executable(Assignment_3
         shell.h
         shellmemory.c
         shellmemory.h memorymanager.c memorymanager.h)
+
+target_link_libraries(Assignment_3 m)

@@ -1,3 +1,0 @@
-set z 70
-print z
-quit

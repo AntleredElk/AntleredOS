@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/antler/CLionProjects/Assignment/Assignment_3/kernel.h
+
 /home/antler/CLionProjects/Assignment/Assignment_3/memorymanager.c
 stdio.h
 -
@@ -15,8 +17,12 @@ unistd.h
 -
 stdlib.h
 -
+math.h
+-
 ram.h
 /home/antler/CLionProjects/Assignment/Assignment_3/ram.h
+kernel.h
+/home/antler/CLionProjects/Assignment/Assignment_3/kernel.h
 
 /home/antler/CLionProjects/Assignment/Assignment_3/ram.h
 stdio.h
